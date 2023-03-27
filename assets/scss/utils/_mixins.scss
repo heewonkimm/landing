@@ -1,0 +1,23 @@
+//반응형
+$mobile: 767px; //320
+$tablet: 1023px; // 768
+$desktop: 1300px; //1024
+
+@mixin mobile{
+  @media (max-width: $mobile){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (max-width: $desktop){
+    @content;
+    
+  }
+}

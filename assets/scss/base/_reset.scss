@@ -1,0 +1,29 @@
+//리셋
+*{margin:0;padding:0;border: 0;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+html, body {height:100%;width: 100%;}
+picture, video, canvas, svg {display: block;max-width:100%;max-height: 100%;}
+img {border: 0;max-width: 100%;vertical-align: middle;display: inline-block;}
+button {background:none;border:0;cursor:pointer;}
+ol, ul {list-style: none;}
+a {text-decoration:none; color: inherit;}
+table {border-collapse:collapse;border-spacing:0}
+
+
+body {
+    font-family: 'Fk Display',sans-serif;
+    color: #333;
+    font-size: 1.1111111111111112vw;
+    line-height: 1.5;
+    font-weight: 400;
+    background: #000;
+    ::selection {
+        background-color: #d9ff00;
+        color: #000;
+    }
+}
+
+html{
+	scroll-behavior: smooth;
+}

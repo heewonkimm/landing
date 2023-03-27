@@ -1,0 +1,133 @@
+
+.footer {
+    position: relative;
+    padding: 32px;
+    z-index: 19;
+    @include tablet {
+        padding: 20px;
+    }
+}
+
+
+.footer_top {
+    width: 60vw;
+    margin: 0 auto;
+    padding: 10rem 0;
+    @include desktop {
+        width: initial;
+        padding: 10rem 6vw;
+    }
+    @include mobile{
+        width: initial;
+        padding: 42vw 6vw;
+    }
+    .text {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: hsla(0,0%,100%,.6);
+        text-indent: 2.6rem;
+        @include desktop {
+            font-size: 3vw;
+        }
+        @include mobile {
+            font-size: 5.5vw;
+        }
+        .shape1, .shape2 {
+            display: inline-block;
+            width: 4.3rem;
+            height: 2.8rem;
+            margin-bottom: -5px;
+            background-image: url(../images/shape_pink.png);
+            background-position: 50% 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: shapeRotate 5s cubic-bezier(.7,.04,.63,1.1);
+            animation-iteration-count: infinite;
+            @include desktop {
+                width: 5.5vw;
+                height: 3.5vw;
+            }
+            @include mobile {
+                width: 8vw;
+                height: 5.7vw;
+                margin-bottom: -2px;
+            }
+        }
+        .shape2 {
+            background-image: url(../images/shape_green.png);
+            animation-delay: 0.5s;
+        }
+        .point_color {
+            text-decoration: underline;
+            text-underline-offset : 7px;
+            color: rgb(41, 255, 101);
+        }
+        .point_text {
+            color: #fff;
+            font-style: italic;
+        }
+    }
+}
+
+
+.footer_bottom {
+    border-top: 1px solid #fff;
+    color: #fff;
+    .title_area {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 50px 0;
+        @include tablet {
+            font-size: 2.3vw;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    .text_area {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        @include tablet {
+            font-size: 1.7vw;
+        }
+        @include mobile {
+            padding-top: 5vw;
+            font-size: 4vw;
+        }
+    }
+    .contact_wrap {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            row-gap: 5vw;
+        }
+        .contact {
+            margin-right: 25%;
+        }
+        strong {
+            display: block;
+            font-weight: 500;
+            padding-bottom: 3px;
+        }
+        a {
+            font-weight: 300;
+            opacity: .5;
+        }
+        .social {
+            margin-right: 20px;
+            border-bottom: 1px solid #eee;
+        }
+    }
+    .copyright {
+        display: flex;
+        align-items: end;
+        opacity: .5;
+        font-weight: 300;
+    }
+}
+
+
+

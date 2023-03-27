@@ -1,0 +1,42 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+.out {
+    display: none;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    position: relative;
+    opacity: 0;
+    z-index: 2;
+}
+
+//푸터 rotate ani
+@keyframes shapeRotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
