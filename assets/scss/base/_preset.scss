@@ -6,11 +6,6 @@
     clip: rect(0, 0, 0, 0);
     margin: -1px;
 }
-
-.out {
-    display: none;
-}
-
 .inner {
     position: relative;
     width: 100%;
@@ -19,7 +14,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-
 .wrapper {
     position: relative;
     opacity: 0;

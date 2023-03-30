@@ -48,7 +48,6 @@ $(function () {
                 }
             });
 
-
             //헤더//navUpdates sldie up
             updatesMotion = gsap.timeline({
                 paused: true,
@@ -79,7 +78,6 @@ $(function () {
                 }
             });
 
-
             //포트폴리오//scale
             thumbEl = document.querySelectorAll('.container .area_inner');
             thumbEl.forEach(l => {
@@ -92,7 +90,6 @@ $(function () {
                         start: "0 60%",
                         end: "30% 60%",
                         scrub: true,
-                        // markers: true,
                     }
                 });
 
@@ -123,32 +120,29 @@ $(function () {
             $('.nav_link').mouseout(function () {
                 navMotion.play()
             });
-
-
-            //헤더//updates_list slide down
-            // $('.group_updates .more_btn').click(function (e) {
-            //     e.preventDefault();
-            //     $('.group_updates .bg_area').addClass('on');
-            //     $('.group_updates').addClass('on');
-            //     $('.group_updates .button_area').addClass('on');
-            //     $('.group_updates .close_btn').addClass('on');
-            //     $('.group_updates .more_btn').addClass('on2');
-            //     $('.group_updates .bg_area').addClass('on2');
-            // });
-            // $('.group_updates .close_btn').click(function (e) {
-            //     e.preventDefault();
-            //     $('.group_updates .bg_area').removeClass('on');
-            //     $('.group_updates').removeClass('on');
-            //     $('.group_updates .button_area').removeClass('on');
-            //     $('.group_updates .close_btn').removeClass('on');
-            //     $('.group_updates .more_btn').removeClass('on2');
-            //     setTimeout(function () {
-            //         $('.group_updates .bg_area').removeClass('on2');
-            //     }, 600);
-
-            // });
-
         },
+        // min 768
+        "(min-width: 768px)": function () {
+            //hover ani
+            $(".container .area_inner").mouseover(function () {
+                $(this).siblings(".pf_bg").css("opacity", "1");
+                $(".container").css("color", "#000");
+                $(".header").css("color", "#000");
+                $(".scroll_bg").addClass('on')
+            });
+            $(".container .area_inner").mouseout(function () {
+                $(this).siblings(".pf_bg").css("opacity", "0");
+                $(".container").css("color", "#f5f4ee");
+                $(".header").css("color", "#fff");
+                $(".scroll_bg").removeClass('on')
+            });
+        },
+        // max 767
+        "(max-width: 767px)": function () {
+            //hover ani
+            $(".container .area_inner").off('mouseover')
+        },
+                                                               
         // all
         "all": function () {
 
@@ -175,7 +169,6 @@ $(function () {
                 });
             });
 
-
             //메인//intro ani
             gsap.to(".intro_wrap", {
                 scale: 0.85,
@@ -185,10 +178,8 @@ $(function () {
                     start: "0 top",
                     end: "100% top",
                     scrub: 1,
-                    // markers: true,
                 }
             });
-
 
             //포트폴리오//opacity
             imgEl = document.querySelectorAll('.thumb_area img');
@@ -202,46 +193,13 @@ $(function () {
                         start: "0 60%",
                         end: "35% 90%",
                         scrub: true,
-                        // markers: true,
                     }
                 });
 
                 imgAni
                     .to(l, { opacity: 1 })
             });
-
-
-            //전체//hover ani
-            $(".container .area_inner").mouseover(function () {
-                $(this).siblings(".pf_bg").css("opacity", "1");
-                $(".container").css("color", "#000");
-                $(".header").css("color", "#000");
-                $(".scroll_bg").addClass('on')
-            });
-            $(".container .area_inner").mouseout(function () {
-                $(this).siblings(".pf_bg").css("opacity", "0");
-                $(".container").css("color", "#f5f4ee");
-                $(".header").css("color", "#fff");
-                $(".scroll_bg").removeClass('on')
-            });
-
-            // lastWidth = window.innerWidth;
-            // $(window).resize(function () {
-            //     if (window.innerWidth != lastWidth) {
-            //         location.reload();
-            //         scrollTrigger.refresh();
-            //     }
-            //     lastWidth = window.innerWidth;
-            // });
-
-            // $(window).scroll(function () {
-            //     ScrollTrigger.refresh(true)
-            // })
-
         }
     });
 
 });
-// function reloadDivArea() {
-//     $('#divReloadLayer').load(location.href+' #divReloadLayer');
-// }
