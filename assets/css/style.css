@@ -252,19 +252,17 @@ html {
   width: 63px;
   height: 63px;
   border-radius: 4px;
-  background-color: #dfd3ea;
-  overflow: hidden;
 }
 .group_updates .list_area .memoji_wrap img.play {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.65);
+  transform: translate(-50%, -50%) scale(2.55);
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-top: 2px;
+  margin-top: -3px;
   max-width: 200%;
   z-index: 10;
 }
@@ -273,7 +271,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.98);
+  transform: translate(-50%, -50%) scale(1.05);
   z-index: 5;
 }
 @media (max-width: 1023px) {
@@ -1004,6 +1002,20 @@ html {
     margin: 0 1vw !important;
   }
 }
+.sc_portfolio .pf_spacer3 {
+  margin: -6em 3em 0 5em !important;
+}
+@media (max-width: 1023px) {
+  .sc_portfolio .pf_spacer3 {
+    margin-left: 4vw !important;
+    margin-right: 2vw !important;
+  }
+}
+@media (max-width: 767px) {
+  .sc_portfolio .pf_spacer3 {
+    margin: 0 1vw !important;
+  }
+}
 .sc_portfolio .pf_bg {
   opacity: 0;
   position: fixed;
@@ -1026,6 +1038,9 @@ html {
 .sc_portfolio .pf_bg.fourth {
   background-color: #d9ff00;
 }
+.sc_portfolio .pf_bg.fifth {
+  background-color: #abc8e1;
+}
 .sc_portfolio .thumb_area.first {
   background-color: hsl(245, 100%, 58.93%);
 }
@@ -1037,4 +1052,7 @@ html {
 }
 .sc_portfolio .thumb_area.fourth {
   background-color: #d9ff00;
+}
+.sc_portfolio .thumb_area.fifth {
+  background-color: #abc8e1;
 }

@@ -114,18 +114,18 @@
             width: 63px;
             height: 63px;
             border-radius: 4px;
-            background-color: #dfd3ea;
-            overflow: hidden;
+            // background-color: #dfd3ea;
+            // overflow: hidden;
 
             img.play {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%) scale(1.65);
+                transform: translate(-50%, -50%) scale(2.55);
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
-                margin-top: 2px;
+                margin-top: -3px;
                 max-width: 200%;
                 z-index: 10;
             }
@@ -135,7 +135,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%) scale(0.98);
+                transform: translate(-50%, -50%) scale(1.05);
                 z-index: 5;
             }
         }
