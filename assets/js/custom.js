@@ -172,11 +172,11 @@ $(function () {
             //메인//intro ani
             gsap.to(".intro_wrap", {
                 scale: 0.85,
-                filter: "blur(15px)",
+                filter: "blur(18px)",
                 scrollTrigger: {
-                    trigger: ".sc_main",
+                    trigger: ".container",
                     start: "0 top",
-                    end: "100% top",
+                    end: "18% top",
                     scrub: 1,
                 }
             });
