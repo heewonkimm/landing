@@ -1005,6 +1005,55 @@ html {
 .sc_portfolio .pf_spacer3 {
   margin: -6em 3em 0 5em !important;
 }
+.sc_portfolio .pf_spacer3 .review_btn {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+.sc_portfolio .pf_spacer3 :hover .adaptive_list {
+  opacity: 1;
+}
+.sc_portfolio .pf_spacer3 .adaptive_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2.6vw;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+@media (max-width: 767px) {
+  .sc_portfolio .pf_spacer3 .adaptive_list {
+    row-gap: 7.5vw;
+  }
+}
+.sc_portfolio .pf_spacer3 .adaptive_link {
+  position: relative;
+  font-size: 2.1vw;
+  color: #fff !important;
+}
+@media (max-width: 767px) {
+  .sc_portfolio .pf_spacer3 .adaptive_link {
+    font-size: 6vw;
+  }
+}
+.sc_portfolio .pf_spacer3 .adaptive_link:hover::after {
+  width: 100%;
+}
+.sc_portfolio .pf_spacer3 .adaptive_link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2.5px;
+  background-color: #fff;
+  transition: width 0.2s ease-in-out;
+}
 @media (max-width: 1023px) {
   .sc_portfolio .pf_spacer3 {
     margin-left: 4vw !important;
@@ -1054,5 +1103,6 @@ html {
   background-color: #d9ff00;
 }
 .sc_portfolio .thumb_area.fifth {
+  position: relative;
   background-color: #abc8e1;
 }

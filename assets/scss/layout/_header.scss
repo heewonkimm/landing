@@ -16,11 +16,9 @@
     padding-left: 32px;
     visibility: hidden;
     transition: top 0.5s ease-in-out;
-
     @include tablet {
         display: none;
     }
-
     .list_area {
         display: flex;
         flex-direction: column;
@@ -28,39 +26,31 @@
         align-items: flex-end;
         position: relative;
         z-index: 16;
-
         @include tablet {
             z-index: 30;
         }
-
         .area_inner {
             position: relative;
             padding-top: 32px;
             z-index: 25;
-
             @include tablet {
                 padding-top: 20px;
             }
-
             @include mobile {
                 width: 100%;
             }
         }
-
         .list_item {
             max-height: 8px;
             transition: max-height .8s cubic-bezier(.69, .12, .31, 1.35);
             position: relative;
-
             @include tablet {
                 max-height: 102px;
             }
-
             .item_spacer {
                 margin-bottom: 8px;
             }
         }
-
         .list_link {
             display: flex;
             align-items: flex-start;
@@ -74,17 +64,14 @@
             background-color: hsla(0, 0%, 100%, .1);
             backdrop-filter: blur(16px);
             transition: background-color .5s;
-
             @include mobile {
                 width: 100%;
             }
-
             &:hover {
                 background-color: #fff;
                 color: #000;
             }
         }
-
         img:not(.memoji_wrap > img) {
             width: 63px;
             height: 62px;
@@ -92,31 +79,24 @@
             background-color: #000;
             object-fit: cover;
         }
-
         .text_wrap {
             width: 100%;
             margin-left: 16px;
             flex: 1;
         }
-
         .title {
             display: flex;
             justify-content: space-between;
             font-weight: 400;
         }
-
         .desc {
             opacity: .6;
         }
-
         .memoji_wrap {
             position: relative;
             width: 63px;
             height: 63px;
             border-radius: 4px;
-            // background-color: #dfd3ea;
-            // overflow: hidden;
-
             img.play {
                 position: absolute;
                 top: 50%;
@@ -129,7 +109,6 @@
                 max-width: 200%;
                 z-index: 10;
             }
-
             img.pause {
                 display: none;
                 position: absolute;
@@ -139,40 +118,33 @@
                 z-index: 5;
             }
         }
-
         .memoji_link {
             @include tablet {
                 img.play {
                     display: none;
                 }
-
                 img.pause {
                     display: block;
                 }
             }
-
             &:hover {
                 img.play {
                     display: none;
                 }
-
                 img.pause {
                     display: block;
                 }
             }
-
             &.on {
                 img.play {
                     display: none;
                 }
-
                 img.pause {
                     display: block;
                 }
             }
         }
     }
-
     .button_area {
         display: flex;
         justify-content: flex-end;
@@ -183,11 +155,9 @@
         margin-top: 10px;
         z-index: 15;
         transition: margin-top .5s;
-
         @include tablet {
             display: none;
         }
-
         .close_btn,
         .more_btn {
             opacity: 0;
@@ -203,49 +173,39 @@
             background-color: hsla(0, 0%, 100%, .1);
             backdrop-filter: blur(16px);
             transition: background-color .5s, opacity .5s;
-
             @include tablet {
                 padding: 10px 16px;
             }
-
             &:hover {
                 background-color: #fff;
                 color: #000;
             }
         }
-
         .close_btn {
             z-index: 25;
-
             @include tablet {
                 opacity: 0;
-
                 &.on {
                     opacity: 1;
                     z-index: 28;
                 }
             }
         }
-
         .more_btn {
             z-index: 28;
             opacity: 0;
-
             @include tablet {
                 opacity: 1;
-
                 &.on2 {
                     opacity: 0;
                     z-index: 25;
                 }
             }
-
             &.on {
                 background-color: rgba(245, 244, 238, .4);
             }
         }
     }
-
     .bg_area {
         display: flex;
         position: fixed;
@@ -260,21 +220,17 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity .5s ease-in-out, visibility .5s;
-
         &.on {
             opacity: 1;
             visibility: visible;
         }
-
         @include tablet {
             z-index: -10;
             display: none;
-
             &.on {
                 opacity: 1;
                 z-index: 25;
             }
-
             &.on2 {
                 display: flex;
             }
@@ -289,12 +245,10 @@
     width: 100%;
     padding-right: 32px;
     padding-left: 32px;
-
     @include tablet {
         padding-right: 20px;
         padding-left: 20px;
     }
-
     .nav_area {
         display: flex;
         align-items: flex-start;
@@ -303,13 +257,11 @@
         height: 100%;
         margin-top: 32px;
         margin-bottom: 32px;
-
         @include tablet {
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
-
     .nav_link {
         position: relative;
         font-size: 14px;
@@ -322,33 +274,26 @@
         background-color: hsla(0, 0%, 100%, .1);
         backdrop-filter: blur(16px);
         transition: background-color .5s;
-
         &.on {
             background-color: rgba(245, 244, 238, .4);
         }
-
         &:hover {
             background-color: #fff;
             color: #000;
         }
-
         &.first {
             z-index: 20;
         }
-
         &.second {
             z-index: 19;
-
             &.on2 {
                 transform: translateX(0);
                 width: initial;
                 height: initial;
             }
         }
-
         &.third {
             z-index: 18;
-
             &.on2 {
                 transform: translateX(0);
                 width: initial;

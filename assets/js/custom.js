@@ -1,7 +1,6 @@
 $(function () {
 
     ScrollTrigger.matchMedia({
-        // large
         "(min-width: 1024px)": function () {
 
             //헤더//updates_list slide down
@@ -96,9 +95,8 @@ $(function () {
                 pfAni
                     .to(l, { scale: 1 })
             });
-
         },
-        // medium
+
         "(max-width: 1023px)": function () {
 
             //헤더 마우스 호버
@@ -121,7 +119,7 @@ $(function () {
                 navMotion.play()
             });
         },
-        // min 768
+
         "(min-width: 768px)": function () {
             //hover ani
             $(".container .area_inner").mouseover(function () {
@@ -137,7 +135,7 @@ $(function () {
                 $(".scroll_bg").removeClass('on')
             });
         },
-        // max 767
+
         "(max-width: 767px)": function () {
             //hover ani
             $(".container .area_inner").off('mouseover')
@@ -145,7 +143,6 @@ $(function () {
                                                                
         // all
         "all": function () {
-
             gsap.registerPlugin(ScrollTrigger);
 
             //로드//ani
@@ -155,7 +152,6 @@ $(function () {
                 .to(".wrapper", { duration: 0.8, opacity: 1 }, 'a')
                 .to(".group_intro", { duration: 0.6, scale: 1 }, 'a')
                 .to(".group_updates", { duration: 0.2, right: 0, visibility: "visible", delay: 0.8 }, 'a');
-
 
             //메인//intro Hover ani
             $(document).ready(function () {
