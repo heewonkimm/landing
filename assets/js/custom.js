@@ -150,6 +150,7 @@ $(function () {
             loadAni
                 .addLabel('a')
                 .to(".wrapper", { duration: 0.8, opacity: 1 }, 'a')
+                .to(".wrapper .velog .intro_link::after", { duration: 0.8, opacity: 1 }, 'a')
                 .to(".group_intro", { duration: 0.6, scale: 1 }, 'a')
                 .to(".group_updates", { duration: 0.2, right: 0, visibility: "visible", delay: 0.8 }, 'a');
 
