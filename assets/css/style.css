@@ -719,7 +719,7 @@ html {
   width: 100%;
   max-width: 100%;
 }
-.sc_main .velog .intro_link::after {
+.sc_main .velog .intro_link::before {
   content: "";
   display: block;
   position: absolute;
@@ -729,8 +729,9 @@ html {
   height: 3px;
   background-color: #d9ff00;
   transition: opacity 0.2s ease-in-out;
+  opacity: 0;
 }
-.sc_main .velog:hover .intro_link::after {
+.sc_main .velog:hover .intro_link::before {
   opacity: 0;
 }
 
