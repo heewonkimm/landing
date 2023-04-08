@@ -103,7 +103,7 @@
         max-width: 100%;
     }
 
-    .velog .intro_link::before {
+    .velog .intro_link::after {
         content: '';
         display: block;
         position: absolute;
@@ -112,11 +112,9 @@
         width: calc(100% - 5em);
         height: 3px;
         background-color: #d9ff00;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
     }
 
-    .velog:hover .intro_link::before {
+    .velog:hover .intro_link::after {
         opacity: 0;
     }
 }
