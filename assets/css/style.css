@@ -1004,10 +1004,6 @@ html {
 .sc_portfolio .pf_spacer3 {
   margin: -6em 3em 0 5em !important;
 }
-.sc_portfolio .pf_spacer3 .review_btn {
-  text-decoration: line-through;
-  text-decoration-thickness: 2px;
-}
 .sc_portfolio .pf_spacer3 :hover .adaptive_list {
   opacity: 1;
 }
