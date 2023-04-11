@@ -1,4 +1,4 @@
-$(function () {
+window.onload = function(){
 
     ScrollTrigger.matchMedia({
         "(min-width: 1024px)": function () {
@@ -200,4 +200,4 @@ $(function () {
         }
     });
 
-});
+};
