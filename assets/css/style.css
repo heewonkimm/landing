@@ -707,6 +707,9 @@ html {
 .sc_main .intro_text.email {
   right: 0.2em;
 }
+.sc_main .intro_text.velog {
+  margin-left: 0.5vw;
+}
 @media (max-width: 1023px) {
   .sc_main .intro_text.velog {
     right: -1.1em;
@@ -809,6 +812,9 @@ html {
 }
 .velog.on span:nth-child(6) {
   transform: translate3d(0.3em, 0.7em, 0px) rotateZ(12deg);
+}
+.velog.on span:nth-child(7) {
+  transform: translate3d(0.2em, -0.15em, 0px) rotateZ(-9deg);
 }
 
 .sc_portfolio {

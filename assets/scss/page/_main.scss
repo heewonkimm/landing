@@ -89,6 +89,7 @@
         }
 
         &.velog {
+            margin-left: 0.5vw;
             @include tablet {
                 right: -1.1em;
             }
@@ -246,6 +247,9 @@
 
             &:nth-child(6) {
                 transform: translate3d(0.3em, 0.7em, 0px) rotateZ(12deg);
+            }
+            &:nth-child(7) {
+                transform: translate3d(0.2em, -0.15em, 0px) rotateZ(-9deg);
             }
         }
     }
