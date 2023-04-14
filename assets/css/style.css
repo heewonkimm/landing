@@ -554,6 +554,11 @@ html {
   color: #fff;
   font-style: italic;
 }
+.footer_top .text .under {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
 
 .footer_bottom {
   border-top: 1px solid #fff;
