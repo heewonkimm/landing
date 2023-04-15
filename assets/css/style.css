@@ -638,6 +638,7 @@ html {
   color: #f5f4ee;
   transition: color 1s;
   z-index: 10;
+  overflow: hidden;
 }
 
 .sc_main {
