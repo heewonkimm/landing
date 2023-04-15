@@ -81,13 +81,13 @@ window.onload = function(){
             thumbEl = document.querySelectorAll('.container .area_inner');
             thumbEl.forEach(l => {
 
-                gsap.set(l, { scale: 1.23 })
+                gsap.set(l, { scale: 1.35 })
 
                 const pfAni = gsap.timeline({
                     scrollTrigger: {
                         trigger: l,
                         start: "0 60%",
-                        end: "30% 60%",
+                        end: "38% 60%",
                         scrub: true,
                     }
                 });
@@ -148,7 +148,6 @@ window.onload = function(){
             //로드//ani
             const loadAni = gsap.timeline();
 
-            gsap.set(".wrapper .velog .intro_link::after", { backgroundColor: "red" })
             loadAni
                 .addLabel('a')
                 .to(".wrapper", { duration: 0.8, opacity: 1 }, 'a')
