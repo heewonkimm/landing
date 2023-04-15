@@ -555,9 +555,15 @@ html {
   font-style: italic;
 }
 .footer_top .text .under {
-  color: #fff;
   text-decoration: underline;
-  text-underline-offset: 7px;
+}
+.footer_top .text .under img {
+  width: 2.5rem;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+.footer_top .text .under img.size {
+  width: 2.3rem;
 }
 
 .footer_bottom {
