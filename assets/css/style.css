@@ -667,18 +667,18 @@ html {
 .sc_main .intro_wrap {
   position: relative;
   top: -2%;
-  width: 42.5em;
+  width: 41em;
   text-align: justify;
   white-space: nowrap;
 }
 @media (max-width: 1023px) {
   .sc_main .intro_wrap {
-    width: 63vw;
+    width: 60vw;
   }
 }
 @media (max-width: 767px) {
   .sc_main .intro_wrap {
-    width: 72vw;
+    width: 70vw;
   }
 }
 .sc_main .intro_text {
@@ -720,11 +720,11 @@ html {
   right: 0.2em;
 }
 .sc_main .intro_text.velog {
-  margin-left: 0.5vw;
+  margin-left: 1.3vw;
 }
 @media (max-width: 1023px) {
   .sc_main .intro_text.velog {
-    right: -1.1em;
+    right: -3.1em;
   }
 }
 .sc_main .intro_link {

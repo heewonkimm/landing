@@ -34,16 +34,16 @@
     .intro_wrap {
         position: relative;
         top: -2%;
-        width: 42.5em;
+        width: 41em;
         text-align: justify;
         white-space: nowrap;
 
         @include tablet {
-            width: 63vw;
+            width: 60vw;
         }
 
         @include mobile {
-            width: 72vw;
+            width: 70vw;
         }
     }
 
@@ -90,9 +90,9 @@
         }
 
         &.velog {
-            margin-left: 0.5vw;
+            margin-left: 1.3vw;
             @include tablet {
-                right: -1.1em;
+                right: -3.1em;
             }
         }
     }
